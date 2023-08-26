@@ -6,6 +6,8 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 import string
+from sklearn.feature_extraction.text import TfidfVectorizer
+#tfidf = TfidfVectorizer(max_features=3000)
 
 
 tfidf = pickle.load(open('vector.pkl','rb'))
